@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chang Yu Chen</title>
+  <link rel="stylesheet" herf="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+
+<body>
+	
+	<div class="topbar">
+		<div class="fill">
+			<li>The Ideas!</li>
+			<ul class="nav">
+				<li class+"active"><a href="/ideas">Ideas</a></li>
+				<li ><%= link_to 'New Idea', new_idea_path %></li>
+			</ul>
+			<li>The profiles</li>
+      <ul class="nav">
+        <li class="active"><a href="/profiles">profiles</a></li>
+      </ul>
+		</div>
+	</div>
+<footer>
+	<div class="container">
+		I am at <a href="http://railsgirls.tw/"target="_blank">Rails Girls Taipei 2013!</a>
+
+</div></footer>
+
+</body>		
+
+<div class="container">
+<%= yield %>
+</div>
+
+</body>
+</html>
